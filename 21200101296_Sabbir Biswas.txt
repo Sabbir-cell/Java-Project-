@@ -1,0 +1,73 @@
+// Sabbir Biswas
+// Id : 21200101296
+
+// Answer no 1
+
+import java.util;
+interface  Ant{
+    void b1();
+}
+abstract class Elephent{
+    void a1(){
+    }
+    abstract void a2(int n);
+}
+public class Animal extends Elephent implements Ant{
+    @Override
+    public void b1() {
+        System.out.println("Look an_interface");
+    }
+
+    @Override
+    void a2(int n) {
+        if (n%2==0)
+            throw new ArithmeticException("This is Even Number");
+    }
+
+    public static void main(String[] args) {
+        Ant ant =new Animal();
+        Elephent elephent = new Animal();
+        ant.b1();
+        try{
+            elephent.a2(0);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+}
+
+
+//Answer no 2
+
+public class CyberStore extends Thread {
+    String packageList;
+    String packagePrice;
+    String packageLocation;
+    
+ class con1{  
+//creating a default constructor  
+    con1(){System.out.println("created");}  
+//main method  
+    public static void main(String args[]){  
+//calling a default constructor  
+    con1 b=new con1();  
+    }  
+} 
+
+void display()
+CyberStore(String packageList, String packagePrice, String packageLocation){
+        this. packageList = packagePrice;
+        this.packagePrice = packagePrice;
+        this.packageLocation = packageLocation;
+}
+
+public class Main extends Thread {
+  public static void main(String[] args) {
+    Main thread = new Main();
+    thread.join();
+    
+    // CyberStore t1 = new CyberStore("L1", "six thousands", “Dhanmondi”);
+    // CyberStore t2 = new CyberStore(“L2", "eight thousands",”Gulshan”);
+    // CyberStore t3 = new CyberStore("L3", "ten thousands",”Mohakhali”);
+}
+
